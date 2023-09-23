@@ -1,0 +1,9 @@
+.content_container {
+    position: absolute;
+    width: calc(100% - 270px);
+    top: 60px;
+    left: 270px; 
+    min-height: 100vh;
+    background: var(--white);
+    transition: width, left, right, 0.3s;
+  }
