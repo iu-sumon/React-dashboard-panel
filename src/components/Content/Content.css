@@ -1,8 +1,18 @@
-.content_container {
+.content_container_1 {
     position: absolute;
     width: calc(100% - 270px);
     top: 60px;
     left: 270px; 
+    min-height: 100vh;
+    background: var(--white);
+    transition: width, left, right, 0.3s;
+  }
+
+.content_container_2 {
+    position: absolute;
+    width: calc(100% - 58px);
+    top: 60px;
+    left: 58px; 
     min-height: 100vh;
     background: var(--white);
     transition: width, left, right, 0.3s;

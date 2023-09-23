@@ -2,11 +2,16 @@
 import './Header.css'
 import brokerLogo from '../../assets/broker-logo-dark.png';
 import DarkLightToggle from '../../DarkLightToggle';
-const Header = () => { 
+import UseBar from '../../Hooks/UseBar';
+ 
+ 
+const Header = () => {  
+    const [isCollapsed, handleBar] = UseBar(); 
+    
     return (
         <div class="topbar">
             <div class="toggle">
-                <div className='barger_icon'>
+                <div onClick={() => handleBar(!isCollapsed)}   className='barger_icon'>
                    <i class="fa-solid fa-bars"></i>
                 </div>
                 <div> 
@@ -23,6 +28,7 @@ const Header = () => {
             <div class="dark_light_container">
                <DarkLightToggle></DarkLightToggle>
             </div>
+
     </div>
     );
 };
